@@ -4,7 +4,7 @@ Overflow question: http://stackoverflow.com/questions/18362368/loading-dlls-at-r
 
 ## Example
 ```
-PS C:\> .\ReflectCmdConsole.exe C:\ReflectCmdDll.dll "dir C:\\"
+PS C:\Build> .\ReflectCmdConsole.exe C:\ReflectCmdDll.dll "dir C:\\"
 [console]: loading assembly.
 [console]: loading type.
 [console]: running command.
@@ -17,21 +17,17 @@ PS C:\> .\ReflectCmdConsole.exe C:\ReflectCmdDll.dll "dir C:\\"
 
 
  Volume in drive C has no label.
- Volume Serial Number is 66F7-9959
+ Volume Serial Number is 9999-9999
 
  Directory of C:\
 
-12/29/2016  05:23 PM               125 bootstrap.log
-12/25/2016  04:10 PM    <DIR>          inetpub
 07/16/2016  06:47 AM    <DIR>          PerfLogs
 12/25/2016  04:12 PM    <DIR>          Program Files
 12/25/2016  02:33 PM    <DIR>          Program Files (x86)
-06/26/2016  12:33 PM    <DIR>          Test with Three Spaces
-07/17/2016  10:12 AM    <DIR>          usb_driver
 09/18/2016  08:10 PM    <DIR>          Users
 01/02/2017  04:01 PM    <DIR>          Windows
                1 File(s)            125 bytes
                8 Dir(s)   6,714,937,344 bytes free
 
-PS C:\>
+PS C:\Build>
 ```
