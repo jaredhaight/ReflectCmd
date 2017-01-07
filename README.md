@@ -1,2 +1,37 @@
 ﻿## A reflective DLL loading demo
-I wanted to play around with reflective DLLs so I put this together. Most of the code for this was put together from this Stack Overflow question: http://stackoverflow.com/questions/18362368/loading-dlls-at-runtime-in-c-sharp
+I wanted to play around with reflective DLLs so I put this together. Most of the code for this was put together from this Stack 
+Overflow question: http://stackoverflow.com/questions/18362368/loading-dlls-at-runtime-in-c-sharp
+
+## Example
+```
+PS C:\> .\ReflectCmdConsole.exe C:\ReflectCmdDll.dll "dir C:\\"
+[console]: loading assembly.
+[console]: loading type.
+[console]: running command.
+[dll]: got command: dir C:\
+[dll]: new proc
+[dll]: starting proc
+[dll]: getting output
+[dll]: returning output
+[console]: printing output.
+
+
+ Volume in drive C has no label.
+ Volume Serial Number is 66F7-9959
+
+ Directory of C:\
+
+12/29/2016  05:23 PM               125 bootstrap.log
+12/25/2016  04:10 PM    <DIR>          inetpub
+07/16/2016  06:47 AM    <DIR>          PerfLogs
+12/25/2016  04:12 PM    <DIR>          Program Files
+12/25/2016  02:33 PM    <DIR>          Program Files (x86)
+06/26/2016  12:33 PM    <DIR>          Test with Three Spaces
+07/17/2016  10:12 AM    <DIR>          usb_driver
+09/18/2016  08:10 PM    <DIR>          Users
+01/02/2017  04:01 PM    <DIR>          Windows
+               1 File(s)            125 bytes
+               8 Dir(s)   6,714,937,344 bytes free
+
+PS C:\>
+```
