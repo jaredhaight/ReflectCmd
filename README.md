@@ -1,6 +1,9 @@
 ﻿## A reflective DLL loading demo
-I wanted to play around with reflective DLLs so I put this together. Most of the code for this was put together from this Stack 
-Overflow question: http://stackoverflow.com/questions/18362368/loading-dlls-at-runtime-in-c-sharp
+I wanted to play around with reflective DLLs so I put this together. Most of the code for this was put together from the following resources:
+
+* [MSDN: How to Create and Use Assemblies Using the Command Line (C#)](https://msdn.microsoft.com/en-us/library/mt632257.aspx)
+* [StackOverflow: Loading DLLs at runtime in C#](http://stackoverflow.com/questions/18362368/loading-dlls-at-runtime-in-c-sharp)
+
 
 ## Example
 ```
