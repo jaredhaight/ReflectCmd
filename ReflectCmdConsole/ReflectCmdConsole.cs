@@ -25,9 +25,9 @@ namespace ReflectCmdConsole
             System.Console.WriteLine("[console]: loading type.");
             Type commandProcessor = ReflectCmdDll.GetType("ReflectCmdDll.CommandProcessor");
             System.Console.WriteLine("[console]: creating instance.");
-            var c = Activator.CreateInstance(commandProcessor);
+            var instance = Activator.CreateInstance(commandProcessor);
             System.Console.WriteLine("[console]: running command.");
-            string output = commandProcessor.InvokeMember("Execute", BindingFlags.InvokeMethod, null, c, new object[] { cmd }).ToString();
+            string output = commandProcessor.InvokeMember("Execute", BindingFlags.InvokeMethod, null, instance, new object[] { cmd }).ToString();
             System.Console.WriteLine("[console]: printing output.\n\n");
             System.Console.WriteLine(output);
         }
