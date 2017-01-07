@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KickDLL", "KickDLL\KickDLL.csproj", "{F4BC5921-97BF-4756-9477-DB3BC27BBCB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectCmdDll", "ReflectCmdDLL\ReflectCmdDll.csproj", "{F4BC5921-97BF-4756-9477-DB3BC27BBCB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectCmdConsole", "ReflectCmdConsole\ReflectCmdConsole.csproj", "{90F36073-053E-40BE-8B8E-E5510F6BF01F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F4BC5921-97BF-4756-9477-DB3BC27BBCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4BC5921-97BF-4756-9477-DB3BC27BBCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4BC5921-97BF-4756-9477-DB3BC27BBCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F36073-053E-40BE-8B8E-E5510F6BF01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F36073-053E-40BE-8B8E-E5510F6BF01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F36073-053E-40BE-8B8E-E5510F6BF01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F36073-053E-40BE-8B8E-E5510F6BF01F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

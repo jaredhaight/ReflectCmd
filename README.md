@@ -1,0 +1,2 @@
+﻿## A reflective DLL loading demo
+I wanted to play around with reflective DLLs so I put this together. Most of the code for this was put together from this Stack Overflow question: http://stackoverflow.com/questions/18362368/loading-dlls-at-runtime-in-c-sharp
