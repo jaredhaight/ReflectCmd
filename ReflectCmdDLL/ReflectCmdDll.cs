@@ -21,9 +21,9 @@ namespace ReflectCmdDll
             proc.StartInfo.Arguments = "/C "+cmd;
             System.Console.WriteLine("[dll]: starting proc");
             proc.Start();
+            System.Console.WriteLine("[dll]: getting output");
             string output = proc.StandardOutput.ReadToEnd();
             string error = proc.StandardError.ReadToEnd();
-            System.Console.WriteLine("[dll]: getting output");
             if (error.Length > 0)
             {
                 System.Console.WriteLine("[dll]: returning error");

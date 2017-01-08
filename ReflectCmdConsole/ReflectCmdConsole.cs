@@ -22,12 +22,16 @@ namespace ReflectCmdConsole
 
             System.Console.WriteLine("[console]: loading assembly.");
             Assembly ReflectCmdDll = Assembly.LoadFile(dllPath);
+
             System.Console.WriteLine("[console]: loading type.");
             Type commandProcessor = ReflectCmdDll.GetType("ReflectCmdDll.CommandProcessor");
+
             System.Console.WriteLine("[console]: creating instance.");
             var instance = Activator.CreateInstance(commandProcessor);
-            System.Console.WriteLine("[console]: running command.");
+
+            System.Console.WriteLine("[console]: passing command to dll.");
             string output = commandProcessor.InvokeMember("Execute", BindingFlags.InvokeMethod, null, instance, new object[] { cmd }).ToString();
+
             System.Console.WriteLine("[console]: printing output.\n\n");
             System.Console.WriteLine(output);
         }

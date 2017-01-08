@@ -10,7 +10,8 @@ I wanted to play around with reflective DLLs so I put this together. Most of the
 PS C:\Build> .\ReflectCmdConsole.exe C:\ReflectCmdDll.dll "dir C:\\"
 [console]: loading assembly.
 [console]: loading type.
-[console]: running command.
+[console]: creating instance.
+[console]: passing command to dll.
 [dll]: got command: dir C:\
 [dll]: new proc
 [dll]: starting proc
@@ -24,13 +25,12 @@ PS C:\Build> .\ReflectCmdConsole.exe C:\ReflectCmdDll.dll "dir C:\\"
 
  Directory of C:\
 
-07/16/2016  06:47 AM    <DIR>          PerfLogs
 12/25/2016  04:12 PM    <DIR>          Program Files
 12/25/2016  02:33 PM    <DIR>          Program Files (x86)
 09/18/2016  08:10 PM    <DIR>          Users
 01/02/2017  04:01 PM    <DIR>          Windows
                1 File(s)            125 bytes
-               8 Dir(s)   6,714,937,344 bytes free
+               8 Dir(s)   6,721,544,192 bytes free
 
 PS C:\Build>
 ```
